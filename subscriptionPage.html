@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BAOIAM</title>
+    <link rel="icon" type="image/x-icon"font-weight="200px" href="./image/3d logo 5.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+s
+    <style type="text/css">
+        .navbar-brand, .navbar-brand>img {
+        width: 13rem;
+        }
+    </style>
+
+<script>
+  //counter design
+
+document.addEventListener("DOMContentLoaded", () => {
+function counter(id, start, end, duration){
+  let obj = document.getElementById(id),
+  current = start,
+  range = end - start,
+  increment = end > start ? 1: -1,
+  step = Math.abs(Math.floor(duration / range)),
+  timer = setInterval(() => {
+    current += increment;
+    obj.textContent = current;
+    if(current == end){
+      clearInterval(timer);
+    }
+  }, step);
+}
+counter("count1", 0, 1287, 3000);
+counter("count2", 100, 5786, 2500);
+counter("count3", 0, 1440, 3000);
+counter("count4", 0, 7110, 3000);
+
+});
+</script>
+
+<!------------------------------------ price card---------------->
+
+  <script>
+
+      const checkbox = document.getElementById("checkbox");
+      const professional = document.getElementById("professional");
+      const master = document.getElementById("master");
+      const basic = document.getElementById("basic");
+
+      checkbox.addEventListener("click", () => {
+        basic.textContent = basic.textContent === "$199.99" ? "$19.99" : "$199.99";
+        professional.textContent =
+          professional.textContent === "$249.99" ? "$24.99 " : "$249.99";
+        master.textContent = master.textContent === "$399.99" ? "$39.99" : "$399.99";
+      });
+
+    </script>
+
+  <!----------------Faq---------------------->
+  <script>
+    const questions = document.querySelectorAll('.question-answer');
+
+questions.forEach(function(question) {
+    const btn = question.querySelector('.question-btn');
+    btn.addEventListener("click", function() {
+        questions.forEach(function(item) {
+            if (item !== question) {
+                item.classList.remove("show-text");
+            }
+        })
+        question.classList.toggle("show-text");
+    })
+})
+  </script>  
+</head>
+<body>
+ 
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2W2SNW"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+      
+    <div class="container-fluid px-100">
+      <nav class="navbar navbar-expand-md mylavbar">
+      <a class="navbar-brand" href="./HomePage.html"> <img src = "image/3d logo 5.png" alt="LogoImg" style="width: 50%;height: 50%; margin-top:-2rem;"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+           <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item dropdown">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About </i></a>
+              
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Solutions </i></a>
+                          </li>
+
+
+            <li class="nav-item">
+              <a  class="nav-link" href="#" >Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a  class="nav-link" href="#" >Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn55" href="sign-in.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn55" href="#">Sign Up</a>
+            </li>
+          </ul>
+    </div>
+</nav>
+
+<!-- section 1 -->
+
+<div class="section1 sectionbox">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="pt-100">
+
+      <h2>Turn customers into regulars 
+        with <span class="text-darkblue">
+         Subscriptions</span></h2>
+      <p>Baoiam give you all the tools you need <br>to 
+      power subscriptions from your website.</p>
+        <div class="box21">
+              <button type="submit" class="btn btn-block btn-primary btn2">Request demo</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-7 s1" >
+      <img src="image/sub_2.jpg" class="img-fluid float-right">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- section 2 -->
+<section style="margin-bottom: 2rem;" id="work">
+<div class="container-fluid mt-3">
+<h1 class="text-center">How it Works ?</h1>
+<h6 class="text-center" style="">Getting started is easy. New merchants can be up and
+running in minutes.</h6>
+  <div class="row">
+    <div class="col-sm-4"><img src="image/sub_1.png">
+      <h4>Customize your 
+      subscription</h4>
+      <p style="text-align: center; margin-top: 1rem;">Choose what course best for you whether it's <br>monthly or annual subscriptions</p></div>
+    <div class="col-sm-4"><img src="image/add_2.png">
+      <h4 style="text-align: center;margin-top: 1rem; ">Add pickup and schedules</h4>
+      <p style="text-align: center;margin-top: 1rem;">Easily  pickup offers options to give yourfor<br> the best of both worlds.  </p></div>
+    <div class="col-sm-4"><img src="image/pay.png"><h4 style="text-align: center;margin-top: 1rem;">Get paid fast</h4>
+      <p style="text-align: center;margin-top: 1rem;">Improve your cash flow by getting paid<br> as fast as the next day.</p></div>
+   
+  </div>
+</div>
+</section>
+
+
+<!-------------------------Price card--------------------------------->
+
+<h1 id="choose"> Choose your Plan</h1>
+<p id="choose1" style="text-align: center; color: black; font-size: 1rem; font-weight: 400;">There's a plan for every size and type of students -choose the one that fits your<br> monitoring goals. Feel free to contact us for more information.</p>
+
+<section class="card container grid">
+            <div class="card__container grid">
+                <!--==================== CARD 1 ====================-->
+                <article class="card__content grid">
+                    <div class="card__pricing">
+                        <div class="card__pricing-number">
+                            <span class="card__pricing-symbol">$</span>0
+                        </div>
+                        <span class="card__pricing-month">/month</span>
+                    </div>
+    
+                    <header class="card__header">
+                        <div class="card__header-circle grid">
+                            
+                        </div>
+                        
+                        <span class="card__header-subtitle">Free plan</span>
+                        <h1 class="card__header-title">Basic</h1>
+                    </header>
+                    
+                    <ul class="card__list grid">
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">3 user request</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">10 downloads por day</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Daily content updates</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Fully editable files</p>
+                        </li>
+                    </ul>
+    
+                     <button class="card__button"><a href="#" style="color: white;">Choose this plan</a> </button>
+                </article>
+    
+                <!--==================== CARD 2 ====================-->
+                <article class="card__content grid">
+                    <div class="card__pricing">
+                        <div class="card__pricing-number">
+                            <span class="card__pricing-symbol">$</span>19
+                        </div>
+                        <span class="card__pricing-month">/month</span>
+                    </div>
+    
+                    <header class="card__header">
+                        <div class="card__header-circle grid">
+                           
+                        </div>
+    
+                        <span class="card__header-subtitle">Most popular</span>
+                        <h1 class="card__header-title">Professional</h1>
+                    </header>
+                    
+                    <ul class="card__list grid">
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">100 user request</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Unlimited downloads</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Unlock all features from our site</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Daily content updates</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Fully editable files</p>
+                        </li>
+                    </ul>
+    
+                     <button class="card__button"><a href="#" style="color: white;">Choose this plan</a> </button>
+                </article>
+    
+                <!--==================== CARD 3 ====================-->
+                <article class="card__content grid">
+                    <div class="card__pricing">
+                        <div class="card__pricing-number">
+                            <span class="card__pricing-symbol">$</span>29
+                        </div>
+                        <span class="card__pricing-month">/month</span>
+                    </div>
+    
+                    <header class="card__header">
+                        <div class="card__header-circle grid">
+                            
+                        </div>
+    
+                        <span class="card__header-subtitle">For agencies</span>
+                        <h1 class="card__header-title">Enterprise</h1>
+                    </header>
+                    
+                    <ul class="card__list grid">
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Unlimited  user request</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Unlimited downloads</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Unlock all features from our site</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Daily content updates</p>
+                        </li>
+                        <li class="card__list-item">
+                            <i class="uil uil-check card__list-icon"></i>
+                            <p class="card__list-description">Fully editable files</p>
+                        </li>
+                    </ul>
+    
+                    <button class="card__button"><a href="#" style="color: white;">Choose this plan</a> </button>
+                </article>
+            </div>
+        </section>
+        <!--------------------------------- price card end ------------------------>
+
+        <!------------------------------------------FAQ Started----------------------------------->
+         <h2 style="text-align: center; margin-top: 2rem; margin-bottom: 1rem; color: black; font-size: 2.5rem;font-family: bold;">Frequently asked questions</h2>
+  <section class="accordion1" style="padding-top: 10px; padding-bottom: 30px;">
+<div class="container" >
+  <div class="row">
+    <div class="col-sm-6">
+ <div class="accordion">
+  <h2>Frequently asked questions</h2>
+  <div class="item">
+    <div class="question">
+      What is object in javascript?
+    </div>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo sequi accusantium praesentium a rem in, ex nobis molestiae, debitis nulla fugiat reprehenderit molestias accusamus adipisci suscipit libero tempora. Odit!</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="question">
+      How do you create an object in javascript?
+    </div>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo sequi accusantium praesentium a rem in, ex nobis molestiae, debitis nulla fugiat reprehenderit molestias accusamus adipisci suscipit libero tempora. Odit!</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="question">
+      How many types of objects can be created in javascript?
+    </div>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo sequi accusantium praesentium a rem in, ex nobis molestiae, debitis nulla fugiat reprehenderit molestias accusamus adipisci suscipit libero tempora. Odit!</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="question">
+      How to detect object is empty or not in javascript?
+    </div>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo sequi accusantium praesentium a rem in, ex nobis molestiae, debitis nulla fugiat reprehenderit molestias accusamus adipisci suscipit libero tempora. Odit!</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="question">
+      What is difference between object and class in javascript?
+    </div>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo sequi accusantium praesentium a rem in, ex nobis molestiae, debitis nulla fugiat reprehenderit molestias accusamus adipisci suscipit libero tempora. Odit!</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-sm-6 "><img src="image/faq.png"></div>
+</div>
+</div>
+
+</section>
+        <!----------------------------FAQ Ends-------------------------------------------------->
+
+
+<!-------------------------footer start -------------------------------------->
+
+
+
+<section class="footerPart" style="margin-top: 15rem; ;">
+
+  <footer class="bg-dark footer5 text-white px-100" style="width: 100%; padding-bottom: 60%; padding-top: 40%; margin-left: 0%;">
+    <div class="container">
+      <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
+        <div class="row justify-content-lg-between">
+          <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column" style="padding-right: 60px; margin-left: -60px;">
+              <li class="nav-item">
+                <a class="nav-link media" href="#">
+                    <span class="media">
+                      <div style="padding-top: 0px;"></div>
+                      <span class="fas fa-location-arrow mt-1 mr-2" style="margin-bottom: 20px; padding-top: 55%;" ></span>
+                      <span class="media-body">
+                        <h5 class="text-white" style="font-size: 21px; ;padding-top: 60%;">Address</h5>
+                        <p style="padding-top: 10px; ">
+                        28°37'44.9"N 77°22'48.4"E
+                        H-182, Second Floor, Sector 63, Noida, Uttar Pradesh 201301</p>
+                      </span>
+                    </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link media" href="tel:+91-9310143463">
+                    <span class="media">
+                      <span class="fas fa-phone-alt mt-1 mr-2"></span>
+                      <span class="media-body">
+                        <h5 class="text-white" style="font-size: 21px;">Talk With Us</h5>
+                        +91 1234567890
+                      </span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px; padding-top: 130px;">
+            <h5 class="text-white">Company</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BAOIAM Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Child saftey</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Why BAOIAM</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Our results</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Help India lean</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px; padding-top: 130px;">
+            <h5 class="text-white">Other Links</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">Free live classes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Why teach with BAOIAM</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Try WAVE</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Try Whiteboard</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BAAOIAM improvement promise</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">VOLT</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Macro courses</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Maharastra Board</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Benefits</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Engineering Blog</a></li>
+
+            </ul>
+           </div>
+
+
+          <div class="col-6 col-md-4 col-lg" style="padding-top: 130px;">
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column" style="padding-left: 100px; margin-right: -70px;">
+              <h5 class="text-white">Social Media Links</h5>
+              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/people/%F0%9D%98%BD%F0%9D%98%BC%F0%9D%99%8A-%F0%9D%99%84%F0%9D%98%BC%F0%9D%99%88-%F0%9D%98%89%F0%9D%98%A6-%F0%9D%98%88-%F0%9D%98%96%F0%9D%98%AF%F0%9D%98%A6-%F0%9D%98%90%F0%9D%98%AF-%F0%9D%98%88-%F0%9D%98%94%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%B0%F0%9D%98%AF/100064896061625/"><i class="fab fa-facebook fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://twitter.com/BAOIAM1"><i class="fab fa-twitter fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://instagram.com/beaoneinamillion?utm_medium=copy_link"><i class="fab fa-instagram fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd"><i class="fab fa-linkedin fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="footer_image"src="google-play-badge.png"></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><button class="btn55" style="background-color: #4169E1;">Ask to Expert</button></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="opacity-xs my-0" style="margin-left: -60px; margin-right: -60px;">
+
+      <div class="space-1" style="padding-left: 24%; padding-right: 10%; ">
+        <div class="row align-items-md-center">
+          </div>
+
+          <div class="col-md-4 mb-4 mb-md-0">
+            </div>
+          <div class="col-md-4 mb-4 mb-md-0 text-center">
+            </div>
+
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;">&copy; 2022 All Rights Reserved-BOAIAM</p>
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp;  Privacy Policy</p>
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp;  Terms and conditions</p>
+
+             
+          </div>
+    </div> 
+  </footer>
+</section>   
+
+
+
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BAOIAM</title>
+    <link rel="icon" type="image/x-icon"font-weight="200px" href="image/3d logo 5.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+
+    <style type="text/css">
+        .navbar-brand, .navbar-brand>img {
+        width: 13rem;
+        }
+    </style>
+
+<script>
+  //counter design
+
+document.addEventListener("DOMContentLoaded", () => {
+function counter(id, start, end, duration){
+  let obj = document.getElementById(id),
+  current = start,
+  range = end - start,
+  increment = end > start ? 1: -1,
+  step = Math.abs(Math.floor(duration / range)),
+  timer = setInterval(() => {
+    current += increment;
+    obj.textContent = current;
+    if(current == end){
+      clearInterval(timer);
+    }
+  }, step);
+}
+counter("count1", 0, 1287, 3000);
+counter("count2", 100, 5786, 2500);
+counter("count3", 0, 1440, 3000);
+counter("count4", 0, 7110, 3000);
+
+});
+</script>
+
+<!--------------reviews-------------------------->
+
+  <script>
+    
+        var testimonials = document.getElementById('testimonials');
+        var control1 = document.getElementById('control1');
+        var control2 = document.getElementById('control2');
+        var control3 = document.getElementById('control3');
+        
+        
+        control1.onclick=function(){
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.add("active");
+            control2.classList.remove("active");
+            control3.classList.remove("active");
+        }
+        
+        control2.onclick=function(){
+            testimonials.style.transform = "translateX(0px)";
+            control1.classList.remove("active");
+            control2.classList.add("active");
+            control3.classList.remove("active");
+        }
+        
+        control3.onclick=function(){
+            testimonials.style.transform = "translateX(-870px)";
+            control1.classList.remove("active");
+            control2.classList.remove("active");
+            control3.classList.add("active");
+        }
+      </script>
+</head>
+<body>
+ 
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2W2SNW"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+      
+    <div class="container-fluid px-100">
+      <nav class="navbar navbar-expand-md mylavbar" >
+      <a class="navbar-brand" href="#"> <img src = "image/3d logo 5.png" alt="LogoImg" style="width: 50%;height: 50%; margin-top:-2rem;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+           <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item dropdown">
+             <a href="course.html" class="nav-link " data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Courses <i class="fas fa-angle-down"></i></a>
+              <div class="dropdown-menu home-dropdown">
+                  <a class="dropdown-item " href="course.html">Web developing</a>
+                  <a class="dropdown-item " href="course.html">Machine Learning</a>
+                  <a class="dropdown-item " href="course.html">Blockchain</a>
+                  <a class="dropdown-item " href="course.html">Analytics</a>
+                  <a class="dropdown-item " href="course.html">Cloud Computing</a>
+                  <a class="dropdown-item " href="course.html">End user computing</a>
+                  <a class="dropdown-item " href="course.html">Data Base</a>
+                  <a class="dropdown-item " href="course.html">Game Tech</a>
+                  <a class="dropdown-item " href="course.html">Invent of thing</a>
+                  <a class="dropdown-item " href="course.html">Developer Tools</a>
+                  <a class="dropdown-item " href="course.html">Front-End Web & Mobile</a>
+                  <a class="dropdown-item " href="course.html">Robotics</a>
+                  <a class="dropdown-item " href="course.html">Satellite</a>
+              </div>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link " data-toggle="dropdown" href="course.html" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Study Material <i class="fas fa-angle-down"></i></a>
+              <div class="dropdown-menu home-dropdown">
+                  <a class="dropdown-item " href="./ExamPreparation/ExamPreparation.html">Exam Preparation</a>
+                  <a class="dropdown-item " href="./MasterClass/MasterClass.html">Master Class</a>
+                  <!-- <a class="dropdown-item " href="#">Competitive Exam</a>
+                  <a class="dropdown-item " href="#">JEE</a>
+                  <a class="dropdown-item " href="#">NEET</a>
+                  <a class="dropdown-item " href="#">Apptitude</a>
+                  <a class="dropdown-item " href="#">General Knowledge</a>
+                   -->
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a  class="nav-link" href="./CorporateTraining/corporateTraining.html"style="color: black;" >Corporate Training</a>
+            </li>
+
+            <li class="nav-item">
+              <a  class="nav-link" href="./contactUs/contact-us.html"style="color: black;" >Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="./hire from us/hire.html"style="color: black;" >We Hire</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="Baoiam-about-us-final-main/index.html" style="color: black;">About Us</a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a class="btn btn55" href="./hire from us/hire.html" style="background-color: #4169E1;" style="color: black;">We Hire</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="btn btn55" href="login.html" style="background-color: #4169E1;" style="color: black;">Log In</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a  class="nav-link" href="login.html"style="color: black;">Login</a>
+            </li> -->
+          </ul>
+    </div>
+</nav>
+
+<!-- section 1 -->
+
+<div class="section1 sectionbox" style="padding-top: 6%;padding-bottom: 30px; padding-left: 40px;">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="pt-100">
+        <p class="subtitle">Join in a moment of glory!</p>
+        <h1 class="title1">Shine with Your Ideas, <br><span class="text-darkblue"> Knowledge inside you</span></h1>
+        <div class="box21">
+          <p>Many of courses covered in this <b> Courses Details </b> </p>
+            <form class="launchForm" method="GET" action="#">
+          <div class="input-group">
+            <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required="" style="height:60px;">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-block btn-primary btn2 login" style="font-weight: 500;line-height: 2; border-radius: 5px; background-color: #4169E1;">Demo Class</button>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-7" style="padding-left: 5px; padding-right: 30px; padding-top: 20px;">
+      <img src="image/b2.jpg" class="img-fluid float-right">
+    </div>
+  </div>
+</div>
+
+
+<!-- Section 2 -->
+<section id="cards">
+<div class="section2 sectionbox">
+  <h3 class="title2" id="s2h3">Complete Courses with <span class="text-blue">BAOIAM</span> </h3>
+  <div class="row">
+
+    <div class="col-lg-6" id="card1"  >
+      <!-- Card  -->
+      <div class="card h-100 shadow">
+        <div class="row" >
+          <div class="col-sm-6" id="card1">
+            <h3 id=""><br>Coding Skills</h3>
+            <div class="mb-4">
+              <p >Experiment your coding styles here.<br>Process of creating instructions for computers using programming.</p>
+            </div>
+             <div class="input-group-append">
+              <button type="submit" href="course.html" class="btn btn-block btn-primary btn2 login">Open Now </button>
+            </div>        
+          </div>
+          <div class="col-sm-6 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="image/code (2).png" alt=" education website">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <div class="col-lg-6"  id="card1">
+      <!-- Card  -->
+      <div class="card h-100 shadow">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><br>Artificial Intelligence</h3>
+            <div class="mb-4">
+              <p >Be present and keep your intrests on AI. <br>The ability of a computer program or a machine to think and learn.</p>
+            </div>
+            <div class="input-group-append">
+              <button type="submit" href="course.html" class="btn btn-block btn-primary btn2 login">Open Now</button>
+            </div>          
+          </div>
+          <div class="col-sm-6 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="image/AI.png" alt="Launch Your Own Mobile Apps">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section2 sectionbox">
+  <div class="row">
+
+    <div class="col-lg-6"  id="card1">
+      <!-- Card  -->
+      <div class="card h-100 shadow">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><br>Cyber Security</h3>
+            <div class="mb-4">
+              <p >Get application of technologies,controls to protect systems,devices and data from cyber attacks.</p>
+            </div>
+            <div class="input-group-append">
+              <button type="submit" href="course.html" class="btn btn-block btn-primary btn2 login">Open Now</button>
+            </div>          
+          </div>
+          <div class="col-sm-6 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="image/secur.png" alt=" education website">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6"  id="card1">
+      <!-- Card  -->
+      <div class="card h-100 shadow">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><br>Government jobs</h3>
+            <div class="mb-4">
+              <p >Be present where you know yourself better and get great Opportunites.</p>
+            </div>
+            <div class="input-group-append">
+              <button type="submit" href="course.html" class="btn btn-block btn-primary btn2 login">Open Now</button>
+            </div> 
+          </div>
+          <div class="col-sm-6 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="image/gov (2).png" alt="Launch Your Own Mobile Apps">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section2 sectionbox">
+  <div class="row">
+    <div class="col-lg-6"  id="card1">
+      <!-- Card  -->
+      <div class="card h-100 shadow">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><br>Academic Courses</h3>
+            <div class="mb-4">
+              <p >Describing things that relate to the work done in schools, colleges, and universities.</p>
+            </div>
+            <div class="input-group-append">
+              <button type="submit" href="course.html" class="btn btn-block btn-primary btn2 login" >Open Now</button>
+            </div>          
+          </div>
+          <div class="col-sm-6 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="image/st.png" alt=" education website">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6"  id="card1">
+      <!-- Card  -->
+      <div class="card h-100 shadow">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><br>Professional Courses</h3>
+            <div class="mb-4">
+              <p >Be One that provides you with skills, making you job-ready at completion course.</p>
+            </div>
+            <div class="input-group-append">
+              <button type="submit" href="course.html" class="btn btn-block btn-primary btn2 login" >Open Now</button>
+            </div> 
+          </div>
+          <div class="col-sm-6 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="image/in.png" alt="Launch Your Own Mobile Apps">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!------------------------Section-3 ---------------------------------------------------->
+
+  <div class="container info-boxes">
+         <h1 class="text-center">Why BAOIAM ?</h1>
+         <p class="short text-center">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laudantium atque<br> praesentium illo. Omnis assumenda.
+         </p>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="standard">
+          <div class="image">
+            <img src="image/24-hours.png">
+          </div>
+          <div class="content">
+            
+ <p class="text">Claritas est etiam processus dynamicus,
+              qui sequitur mutationem consuetudium lectorum.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="standard">
+          <div class="image">
+            <img src="image/online-class.png">
+          </div>
+          <div class="content">
+           
+            <p class="text">Claritas est etiam processus dynamicus,
+              qui sequitur mutationem consuetudium lectorum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="standard">
+          <div class="image">
+            <img src="image/wallet(1).png" alt="image">
+          </div>
+          <div class="content">
+            
+            <p class="text">Investigationes demonstraverunt lectores
+              legere me lius quod ii legunt saepius notare.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="standard">
+          <div class="image">
+            <img src="image/interaction.png">
+          </div>
+          <div class="content">
+         
+            <p class="text">Claritas est etiam processus dynamicus,
+              qui sequitur mutationem consuetudium lectorum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="standard">
+          <div class="image">
+            <img src="image/protections.png">
+          </div>
+          <div class="content">
+           
+            <p class="text">Investigationes demonstraverunt lectores legere
+              me lius quod ii legunt saepius notare.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="standard">
+          <div class="image">
+            <img src="image/add(1).png">
+          </div>
+          <div class="content">
+
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </div>
+
+
+<!---------------------------------secation3 -ends-------------------->
+
+<!----------------------------REVIEW start----------------------------------------->
+
+<section class="reviews-section">
+      <div class="inner-width">
+        <h1>Students <strong>Reviews</strong></h1>
+        <div class="reviews owl-carousel">
+
+          <div class="review">
+            <div class="review-icon">
+            </div><img src="image/IMG-20210218-WA0015.png" class="img-fluid" style="width: 35%;height: 35%; margin-top:-7rem; margin-left: 6.5rem;">
+            
+            <div class="review-desc"style="margin-top: 2rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+            <div class="review-name">Atul Chauhan</div>
+             <p style="font-size: 1rem;">2nd Year College Student</p>
+
+          </div>
+
+          <div class="review">
+            <div class="review-icon">
+            </div><img src="image/IMG-20210218-WA0020.png" class="img-fluid" style="width: 35%;height: 25%; margin-top:-7rem; margin-left: 7rem;">
+            
+            <div class="review-desc"style="margin-top: 2rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+            <div class="review-name">Anshika Sharma</div>
+             <p style="font-size: 1rem;">Class VI Student</p>
+          </div>
+
+          <div class="review">
+            <div class="review-icon">
+            </div>
+            <img src="image/IMG-20210218-WA0022.png" class="img-fluid"style="width: 35%;height: 30%; margin-top:-8.5rem; margin-left: 7rem;">
+            
+            <div class="review-desc"style="margin-top: 2rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+            <div class="review-name">Vansh Rathore</div>
+             <p style="font-size: 1rem;">Class IV Student</p>
+          </div>
+
+          <div class="review">
+            <div class="review-icon">
+            </div><img src="image/IMG-20210218-WA0015.png"style="width: 35%;height: 25%; margin-top:-7rem; margin-left: 7rem;">
+            
+            <div class="review-desc"style="margin-top: 2rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+            <div class="review-name">Manage Databases</div>
+             <p style="font-size: 1rem;">Class IV Student</p>
+          </div>
+
+          <div class="review">
+            <div class="review-icon">
+            </div>
+            <img src="image/IMG-20210218-WA0022.png"style="width: 35%;height: 25%; margin-top:-8.5rem; margin-left: 7rem;" >
+         
+            <div class="review-desc" style="margin-top: 2rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+               <div class="review-name">Vansh Rathoret</div>
+               <p style="font-size: 1rem;">Class IV Student</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!----------------------------REVIEW ends----------------------------------------->
+
+<!----Counter Section Start -->
+<section id="counter">
+   <h1 class="text-center" style="color:black;font-weight: 500; font-size: 4rem; padding-bottom: 20px; padding-top: 20px;"><span style="color:#21325b; font-size: 2.5rem; margin-bottom: -12rem; margin-top: -22rem;">Trust Us</span></h1>
+ </section>
+  <section class="counter-section" >
+    <div class="container">
+      <div class="row text-center f2" style="margin-right:-2rem; ">
+        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5 f1" style="margin-left:-2rem;">
+          <h2 style="color:white; font-weight:700;">
+            <span id="count1" style="color: white; font-weight:500; font-size: 2.5rem;"></span>+
+            <i class="fas fa-arrow-circle-down " style="color: white"></i>
+          </h2>
+          <p style="color: white; font-weight:500;  font-size: 1.5rem;">Users Million Downloads</p>
+        </div>
+
+        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5 f1 " style="margin-left:-2rem;">
+          <h2 style="color:white; font-weight:700;">
+            <span id="count2" style="color: white; font-weight:500; font-size: 2.5rem;"></span>+
+            <i class="fas fa-user-clock " style="color: white"></i>
+          </h2>
+          <p style="color: white; font-weight:500; font-size: 1.5rem;">Hours of Live Learning</p>
+        </div>
+
+        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5 f1" style="margin-left:-2rem;">
+          <h2 style="color: white; font-weight:700;">
+            <span id="count3" style="color:  white; font-weight:500; font-size: 2.5rem;"></span>+
+             <i class="fas fa-chalkboard-teacher fa-1x " style="color: white"></i>
+          </h2>
+          <p style="color: white; font-weight:500;  font-size: 1.5rem;">Our Teacher's</p>
+        </div>
+
+        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5 f1" style="margin-left:-2rem;">
+          <h2 style="color: white; font-weight:700;">
+            <span id="count4" style="color:  white; font-weight:500; font-size: 2.5rem;"></span>+
+            <i class="fas fa-map-marker-alt  " style="color: white"></i>
+          </h2>
+          <p style="color: white; font-weight:500; font-size: 1.5rem;">Cities Worldwide</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!----Counter Section Ends ---->
+
+
+
+
+ <!-----------------------BTNA Start--------------------------------------------------->
+
+<section id="btna1">
+    <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-sm-12 col-lg-6">
+               <div class="home-image" style="width: 80%; height: 80%;">
+                   <img src="image/vote%2005.PNG" class="img-fluid">
+               </div>
+           </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="home_text">
+
+                    <h2 >Baoiam <span style="color: #21325b;">Scholarship Aptitude</span> Test&nbsp;<span style="color: #21325b ;" ><span style="color: #21325b;"> BSAT 2022</span></span></h2>
+                    <p style="font-size: 1rem;">Get Detailed Scorecard with All India <br>
+                    Percentile and Subject wise Analysis.<br> Bao-iam is the India's Most Loved<br> School Learning App.Get upto 100%<br> Scholarship. For Grade 4 to 10.<br> Learning Skills Report. Courses: CBSE,<br> ICSE, NCERT, State Boards</p>
+                    
+                    <!----Home Download btn ------------->
+
+                    <div class="input-group-append">
+              <button type="submit" class="btn btn-block btn-primary btn2 login" style="width: 30%; border-radius: 15px; background-color: #21325b; padding-left: 1rem;">Visit for more</button>
+            </div> 
+                </div>
+            </div>
+
+           
+
+        </div>
+    </div>
+</section>
+<!-----------------------BTNA Ends--------------------------------------------------->
+
+
+
+
+
+<!----------------------------------------partners- Start-------------------------------->
+<div class="container">
+      <div class="middle">
+        <h1 class="spacing text-center"> Academic Partners </span> -</h1>
+      </div>
+      <div class="partners" style="margin-bottom: 4rem;">
+        <div class="slider">
+         <div class="slide s1">
+          <img src="image/Icell Logo.png">
+         </div>
+         <div class="slide s1">
+          <img src="image/imageedit_1_6506479554.png">
+         </div>
+         <div class="slide s1">
+          <img src="image/Rajdhani logo 2.png">
+         </div>
+         <div class="slide s1">
+          <img src="image/transparent logo.png">
+         </div>
+         <div class="slide s1">
+          <img src="image/Icell Logo.png">
+         </div>
+         <div class="slide s1">
+          <img src="image/imageedit_1_6506479554.png">
+         </div>
+         <div class="slide s1">
+          <img src="image/Rajdhani logo 2.png">
+         </div>
+         <div class="slide s1">
+          <img src="image/transparent logo.png">
+         </div>
+        </div>
+        
+      </div>
+      </div>
+
+      <div class="middle">
+        <h1 class="spacing text-center" >-Industrial Partner-</h1>
+      </div>
+      <img id="mentorsity"src="image/mentorsity.jpeg" class="img-fluid">
+
+      <!-----------------partner Ends-------------------------->
+
+
+      <!-- <div class="middle">
+        <h1 class="spacing text-center" > Industrial Partner </h1>
+      </div>
+      <img id="mentorsity"src="image/mentorsity.jpeg" style="margin-left: 40%;"> -->
+
+      <!---------------partner Ends-------------------------->
+
+
+
+     
+<!-----------Contact US START----------------->
+<section class="contact1 px-100"  >
+  <h1   class="text-center">Contact Us </h1>
+    <div class="container" id="contact" >
+      <div class="content" >
+        <div class="image-box">
+          <img src="image/sc (2).png" alt="">
+        </div>
+        <form action="#">
+        <div class="topic">Send us a message</div>
+          <div class="input-box">
+            <input type="text" required>
+              <label>Enter your name</label>
+          </div>
+          <div class="input-box">
+          <input type="text" required>
+            <label>Enter your email</label>
+          </div>
+          <div class="message-box">
+            <textarea></textarea>
+            <label>Enter your message</label>
+          </div>
+          <div class="input-box">
+            <input type="submit" value="Send Message" style="background-color: #21325b">
+          </div>
+        </form>
+      </div>
+    </div>
+
+</section>
+<!-----------Contact US End----------------->
+
+
+
+<!-------------------subscribe---------------->
+<section id="subscribe" style="width: 100%; padding-top: 10px; padding-left: 0%; padding-right: 0%;">
+  <div class="container" >
+    <div class="subscribe text-center" style="background-color:darkgray">
+      <h3>Join for free trial now!</h3>
+      <p>Subscribe our newsletter and get 30 days free</p>
+      <div class="input-group">
+        <input type="email" class="form-control" placeholder="Email Id">
+        <div class="input-group-append">
+          <button type="sumbit" class="input-group-text btn"><a href="subscriptionPage.html" style="color: white;">subscribe</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!---------------------subscribe end------------------------------->
+
+
+
+<!-- <section class="footerPart " style="width: 100%; padding-top: 10%;" >
+
+
+  
+
+</section> -->
+<!-- 
+<section id="footer" style="padding-top: 10%;">
+  <footer class="bg-dark footer5 text-white" style="width: 100%;">
+    <div class="container">
+      <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
+        <div class="row justify-content-lg-between">
+          <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column" style="padding-right: 60px; margin-left: -60px;">
+              <li class="nav-item">
+                <a class="nav-link media" href="#">
+                    <span class="media">
+                      <div style="padding-top: 10px;"></div>
+                      <span class="fas fa-location-arrow mt-1 mr-2" style="margin-bottom: -10px;" ></span>
+                      <span class="media-body">
+                        <h5 class="text-white" style="font-size: 21px; margin-top: -10px;">Address</h5>
+                        <p style="padding-top: 10px;">
+                        28°37'44.9"N 77°22'48.4"E
+                        H-182, Second Floor, Sector 63, Noida, Uttar Pradesh 201301</p>
+                      </span>
+                    </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link media" href="tel:+91-9310143463">
+                    <span class="media">
+                      <span class="fas fa-phone-alt mt-1 mr-2"></span>
+                      <span class="media-body">
+                        <h5 class="text-white" style="font-size: 21px;">Talk With Us</h5>
+                        +91 1234567890
+                      </span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px;">
+            <h5 class="text-white">Company</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BAOIAM Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Child saftey</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Why BAOIAM</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Our results</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Help India lean</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px;">
+            <h5 class="text-white">Other Links</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">Free live classes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Why teach with BAOIAM</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Try WAVE</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Try Whiteboard</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BAAOIAM improvement promise</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">VOLT</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Macro courses</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Maharastra Board</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Benefits</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Engineering Blog</a></li>
+
+            </ul>
+           </div>
+
+
+          <div class="col-6 col-md-4 col-lg">
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column" style="padding-left: 100px; margin-right: -70px;">
+              <h5 class="text-white">Social Media Links</h5>
+              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/people/%F0%9D%98%BD%F0%9D%98%BC%F0%9D%99%8A-%F0%9D%99%84%F0%9D%98%BC%F0%9D%99%88-%F0%9D%98%89%F0%9D%98%A6-%F0%9D%98%88-%F0%9D%98%96%F0%9D%98%AF%F0%9D%98%A6-%F0%9D%98%90%F0%9D%98%AF-%F0%9D%98%88-%F0%9D%98%94%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%B0%F0%9D%98%AF/100064896061625/"><i class="fab fa-facebook fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://twitter.com/BAOIAM1"><i class="fab fa-twitter fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://instagram.com/beaoneinamillion?utm_medium=copy_link"><i class="fab fa-instagram fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd"><i class="fab fa-linkedin fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="footer_image"src="google-play-badge.png"></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><button class="btn55" style="background-color: #4169E1;">Ask to Expert</button></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="opacity-xs my-0" style="margin-left: -60px; margin-right: -60px;">
+
+      <div class="space-1" style="padding-left: 24%; padding-right: 20%; ">
+        <div class="row align-items-md-center">
+          </div>
+
+          <div class="col-md-4 mb-4 mb-md-0">
+            </div>
+          <div class="col-md-4 mb-4 mb-md-0 text-center">
+            </div>
+
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;">&copy; 2022 All Rights Reserved-BOAIAM</p>
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp;  Privacy Policy</p>
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp;  Terms and conditions</p>
+
+             
+          </div>
+    </div>
+  </footer>
+  </section> -->
+
+
+
+
+
+  <section id="footer" style="padding-top: 10%;">
+
+  <footer class="bg-dark footer5 text-white">
+    <div class="container">
+      <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
+        <div class="row justify-content-lg-between">
+          <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column" style="padding-right: 60px; margin-left: -60px;">
+              <li class="nav-item">
+                <a class="nav-link media" href="#">
+                    <span class="media">
+                      <div style="padding-top: 10px;"></div>
+                      <span class="fas fa-location-arrow mt-1 mr-2" style="margin-bottom: -10px;" ></span>
+                      <span class="media-body">
+                        <h5 class="text-white" style="font-size: 21px; margin-top: -10px;">Address</h5>
+                        <p style="padding-top: 10px;">
+                        28°37'44.9"N 77°22'48.4"E
+                        H-182, Second Floor, Sector 63, Noida, Uttar Pradesh 201301</p>
+                      </span>
+                    </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link media" href="tel:+91-9310143463">
+                    <span class="media">
+                      <span class="fas fa-phone-alt mt-1 mr-2"></span>
+                      <span class="media-body">
+                        <h5 class="text-white" style="font-size: 21px;">Talk With Us</h5>
+                        +91 1234567890
+                      </span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px;">
+            <h5 class="text-white">Company</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="Baoiam-about-us-final-main/index.html">About us</a></li>
+              <li class="nav-item"><a class="nav-link" href="contactUs/contact-us.html">Contact us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BAOIAM Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Child saftey</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Why BAOIAM</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Our results</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Help India lean</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px;">
+            <h5 class="text-white">Other Links</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">Free live classes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Why teach with BAOIAM</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Try WAVE</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Try Whiteboard</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BAAOIAM improvement promise</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">VOLT</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Macro courses</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Maharastra Board</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Benefits</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Engineering Blog</a></li>
+
+            </ul>
+           </div>
+
+          <!-- <div class="col-6 col-md-4 col-lg">
+            <h5 class="text-white">Quick Links</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.facebook.com/people/%F0%9D%98%BD%F0%9D%98%BC%F0%9D%99%8A-%F0%9D%99%84%F0%9D%98%BC%F0%9D%99%88-%F0%9D%98%89%F0%9D%98%A6-%F0%9D%98%88-%F0%9D%98%96%F0%9D%98%AF%F0%9D%98%A6-%F0%9D%98%90%F0%9D%98%AF-%F0%9D%98%88-%F0%9D%98%94%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%B0%F0%9D%98%AF/100064896061625/" data-target="_blank">Facebook</a></li>
+              <li target="_blank" class="nav-item"><a class="nav-link" href="https://twitter.com/BAOIAM1" target="_blank">Twitter</a></li>
+              <li target="_blank" class="nav-item"><a class="nav-link" href="https://instagram.com/beaoneinamillion?utm_medium=copy_link" target="_blank">Instagram</a></li>
+              <li target="_blank" class="nav-item"><a class="nav-link" href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd" target="_blank">youtube</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-6 col-md-4 col-lg">
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column" style="padding-left: 100px; margin-right: -70px;">
+              <h5 class="text-white">Social Media Links</h5>
+              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/people/%F0%9D%98%BD%F0%9D%98%BC%F0%9D%99%8A-%F0%9D%99%84%F0%9D%98%BC%F0%9D%99%88-%F0%9D%98%89%F0%9D%98%A6-%F0%9D%98%88-%F0%9D%98%96%F0%9D%98%AF%F0%9D%98%A6-%F0%9D%98%90%F0%9D%98%AF-%F0%9D%98%88-%F0%9D%98%94%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%B0%F0%9D%98%AF/100064896061625/"><i class="fab fa-facebook fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://twitter.com/BAOIAM1"><i class="fab fa-twitter fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://instagram.com/beaoneinamillion?utm_medium=copy_link"><i class="fab fa-instagram fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd"><i class="fab fa-linkedin fa-2x"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="footer_image"src="google-play-badge.png"></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><button class="btn55">Ask to Expert</button></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="opacity-xs my-0" style="margin-left: -60px; margin-right: -60px;">
+
+      <div class="space-1" style="padding-left: 24%; padding-right: 20%; ">
+        <div class="row align-items-md-center">
+          </div>
+
+          <div class="col-md-4 mb-4 mb-md-0">
+            </div>
+          <div class="col-md-4 mb-4 mb-md-0 text-center">
+            </div>
+            <!-- <p class="text-white opacity-sm small mb-0" style="opacity: .4; text-align: none;">&copy; 2022 All Rights Reserved - BOAIAM Innovations.<a> Privacy Policy</a> <a> Terms and conditions</a></p> -->
+
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;">&copy; 2022 All Rights Reserved-BOAIAM</p>
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp;  Privacy Policy</p>
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp;  Terms and conditions</p>
+
+
+          </div>
+    </div>
+  </footer>
+
+  </section>
+
+
+
+  
+
+ <script>
+      $(".reviews").owlCarousel({
+        margin:20,
+        loop:true,
+        nav:true,
+        center:true,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:2
+          },
+          1000:{
+            items:3
+          }
+        }
+      });
+    </script>
+
+
+
+
+
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+</body>
+</html>
